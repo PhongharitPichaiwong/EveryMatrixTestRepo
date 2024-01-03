@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 
 import '../model/movie.dart';
-import '../secret/the_moviedb_api.dart';
+import '../secret/api.dart';
 import '../utils/environment.dart';
 
 class MovieService {
