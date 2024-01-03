@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 
 import '../model/movie.dart';
+import '../secret/the_moviedb_api.dart';
 import '../utils/environment.dart';
 
 class MovieService {
@@ -10,8 +11,7 @@ class MovieService {
   final String _database = Environment.databaseName;
   final String _collection = Environment.moviesCollection;
   final String _endpoint = Environment.endPointUrl;
-  static const _apiKey =
-      'Ozp8VH8F6R2jh9tdgQUtZMxwFpSN0iZLNlZ6esGUi20Xd5VrwCsAMiMEgPVCIC7Z';
+  static const _apiKey = secretApiKey;
 
   var headers = {
     "content-type": "application/json",
